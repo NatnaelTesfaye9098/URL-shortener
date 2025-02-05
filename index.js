@@ -30,7 +30,7 @@ app.post("/submit", async (req, res) => {
     res.render("index.ejs", { response: result.data });
   } catch (error) {
     console.log("Error: " + error.message);
-    res.status(500).send("Internal Server Error");
+    res.render("index.ejs", { error: "Failed to shorten URL. Try again!" });
   }
 });
 
