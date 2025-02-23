@@ -1,6 +1,7 @@
-URL Shortener
+**URL Shortener**
 This is a simple URL shortener using the CleanURI API, Node.js with Express, and EJS.
 
+<<<<<<< HEAD
 Features
 Shortens long URLs.
 Simple interface to input and get your shortened URL.
