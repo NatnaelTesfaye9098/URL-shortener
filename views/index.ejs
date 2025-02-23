@@ -34,9 +34,8 @@
         <p class="error"><%= error%></p>
     <%} %>
     <script>
-        document.querySelectorAll(".response-container").forEach(item => {
-            const inputfield = item.querySelector(".answer");
-            const btn = item.querySelector(".copy-link-button");
+        const inputfield = document.querySelector(".response-container .answer");
+        const btn = document.querySelector(".response-container .copy-link-button");
 
             btn.addEventListener("click", ()=>{
 
@@ -48,7 +47,6 @@
                     inputfield.value = text;
                 }, 1000)
             });
-        });
     </script>
 </body>
 </html>

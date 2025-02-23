@@ -2,9 +2,12 @@ import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 import qs from "qs"; 
+import env from "dotenv";
 
+env.config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
+const apiUrl = process.env.API_URL;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -17,7 +20,7 @@ app.post("/submit", async (req, res) => {
     try {
         const urlToShorten = req.body.url;
         const result = await axios.post(
-            "https://cleanuri.com/api/v1/shorten",
+            apiUrl,
             qs.stringify({
               url: urlToShorten, 
             }),
@@ -29,7 +32,6 @@ app.post("/submit", async (req, res) => {
           );
     res.render("index.ejs", { response: result.data });
   } catch (error) {
-    console.log("Error: " + error.message);
     res.render("index.ejs", { error: "Failed to shorten URL. Try again!" });
   }
 });

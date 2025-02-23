@@ -123,6 +123,7 @@ h1{
     right: 7px;
     border-radius: 10px;
     border: 0;
+    cursor: pointer;
 }
 
 .response-container button:hover{
