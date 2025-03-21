@@ -1,14 +1,22 @@
-**URL Shortener**
-This is a simple URL shortener using the CleanURI API, Node.js with Express, and EJS.
+# **🔗 URL Shortener**  
 
-Live URL: https://url-shortener-56uj.onrender.com
+A **simple** URL shortener built using **Node.js**, **Express**, and **EJS**, powered by the **CleanURI API**.  
 
-Features
-Shortens long URLs.
-Simple interface to input and get your shortened URL.
+**Live Demo:** [Try it Here](https://url-shortener-56uj.onrender.com)  
 
-Technologies Used
-Node.js
-Express
-EJS
-CleanURI API
+---
+
+## **Features**  
+✅ **Shorten long URLs** instantly  
+✅ **Minimal & user-friendly interface**  
+✅ **Fast & reliable**—powered by CleanURI API  
+
+---
+
+## **Technologies Used**  
+🔹 **Node.js** – Server-side JavaScript runtime  
+🔹 **Express** – Fast and lightweight web framework  
+🔹 **EJS** – Templating engine for rendering views  
+🔹 **CleanURI API** – URL shortening service  
+
+---
